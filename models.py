@@ -142,7 +142,7 @@ class User(db.Model):
         user = User(
             username=username,
             email=email,
-            password=hashed_pwd,
+            password=password,
             image_url=image_url,
         )
 
@@ -205,6 +205,6 @@ def connect_db(app):
 
     You should call this in your Flask app.
     """
-
-    db.app = app
-    db.init_app(app)
+    with app.app_context():
+        db.app = app
+        db.init_app(app)

@@ -127,6 +127,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+.twitter-clone-4a4cb59b8b104672ba222dd09affea8f
 
 # Spyder project settings
 .spyderproject
