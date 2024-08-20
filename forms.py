@@ -10,7 +10,7 @@ class MessageForm(FlaskForm):
 
 
 class UserAddForm(FlaskForm):
-    """Form for adding users."""
+    """Form for adding users"""
 
     username = StringField('Username', validators=[DataRequired()])
     email = StringField('E-mail', validators=[DataRequired()])
