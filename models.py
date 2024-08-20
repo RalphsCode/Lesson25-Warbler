@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 """SQLAlchemy models for Warbler."""
 
 from datetime import datetime
@@ -209,7 +208,6 @@ def connect_db(app):
     with app.app_context():
         db.app = app
         db.init_app(app)
-=======
 """SQLAlchemy models for Warbler."""
 
 from datetime import datetime
@@ -420,4 +418,3 @@ def connect_db(app):
     with app.app_context():
         db.app = app
         db.init_app(app)
->>>>>>> e49aa515c47b4c229a972e7c93c1b38f00a062e4
