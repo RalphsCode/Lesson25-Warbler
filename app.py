@@ -13,7 +13,7 @@ app = Flask(__name__)
 
 # Get DB_URI from environ variable (useful for production/testing) or,
 # if not set there, use development local db.
-app.config['SQLALCHEMY_DATABASE_URI'] = ('postgres://btrncgqj:JSNLosQVdST3l9p0wzBz5ZJDU1LcbcAI@kala.db.elephantsql.com/btrncgqj')
+app.config['SQLALCHEMY_DATABASE_URI'] = ('postgresql://btrncgqj:JSNLosQVdST3l9p0wzBz5ZJDU1LcbcAI@kala.db.elephantsql.com/btrncgqj')
 # os.environ.get('DATABASE_URL', 
 # postgresql://postgres:Ponderosa@localhost/warbler
 
