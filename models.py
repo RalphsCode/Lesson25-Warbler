@@ -142,7 +142,7 @@ class User(db.Model):
         user = User(
             username=username,
             email=email,
-            password=password,
+            password=hashed_pwd,
             image_url=image_url,
         )
 
