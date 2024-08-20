@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import os
 
 from flask import Flask, render_template, request, flash, redirect, session, g
@@ -322,7 +321,6 @@ def add_header(req):
     req.headers["Expires"] = "0"
     req.headers['Cache-Control'] = 'public, max-age=0'
     return req
-=======
 import os
 
 from flask import Flask, render_template, request, flash, redirect, session, g
@@ -646,4 +644,3 @@ def add_header(req):
     req.headers["Expires"] = "0"
     req.headers['Cache-Control'] = 'public, max-age=0'
     return req
->>>>>>> e49aa515c47b4c229a972e7c93c1b38f00a062e4
