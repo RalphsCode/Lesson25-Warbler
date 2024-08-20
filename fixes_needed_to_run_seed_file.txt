@@ -1,0 +1,49 @@
+Seed File Errors
+
+1.
+from collections import Container, Iterable, MutableSet      
+ImportError: cannot import name 'Container' from 'collections' (C:\Users\great\anaconda3\lib\collections\__init__.py)
+
+This is likely due to the fact that the Container class was introduced in Python 3.3 and earlier versions of Python might not have it.
+
+2.
+Jinja2:
+from collections import Mapping
+ImportError: cannot import name 'Mapping' from 'collections' (C:\Users\great\anaconda3\lib\collections\__init__.py)
+
+3.
+File "C:\Users\great\OneDrive\Documents\Springboard\Lessons\Lesson25 - Hatchways\warbler\twitter-clone-4a4cb59b8b104672ba222dd09affea8f\venv\lib\site-packages\flask\sessions.py", line 14, in <module>
+    from collections import MutableMapping
+ImportError: cannot import name 'MutableMapping' from 'collections' (C:\Users\great\anaconda3\lib\collections\__init__.py)
+
+4.
+File "C:\Users\great\OneDrive\Documents\Springboard\Lessons\Lesson25 - Hatchways\warbler\twitter-clone-4a4cb59b8b104672ba222dd09affea8f\venv\lib\site-packages\sqlalchemy\util\compat.py", line 234, in <module>
+    time_func = time.clock
+AttributeError: module 'time' has no attribute 'clock'
+
+This error arises because the time.clock() function was deprecated in Python 3. It was replaced with time.perf_counter(). SQLAlchemy's compatibility layer might be using outdated code that expects time.clock().
+
+5.
+File "C:\Users\great\OneDrive\Documents\Springboard\Lessons\Lesson25 - Hatchways\warbler\twitter-clone-4a4cb59b8b104672ba222dd09affea8f\venv\lib\site-packages\sqlalchemy\sql\base.py", line 49, in <module>
+    class _DialectArgView(collections.MutableMapping):
+AttributeError: module 'collections' has no attribute 'MutableMapping'
+
+6.
+File "C:\Users\great\OneDrive\Documents\Springboard\Lessons\Lesson25 - Hatchways\warbler\twitter-clone-4a4cb59b8b104672ba222dd09affea8f\venv\lib\site-packages\sqlalchemy\sql\base.py", line 49, in <module>
+    class _DialectArgView(collections.MutableMapping):
+AttributeError: module 'collections' has no attribute 'MutableMapping'
+
+7.
+ File "C:\Users\great\OneDrive\Documents\Springboard\Lessons\Lesson25 - Hatchways\warbler\twitter-clone-4a4cb59b8b104672ba222dd09affea8f\venv\lib\site-packages\flask_sqlalchemy\__init__.py", line 39, in <module>
+    _timer = time.clock
+AttributeError: module 'time' has no attribute 'clock'
+
+8.
+File "C:\Users\great\OneDrive\Documents\Springboard\Lessons\Lesson25 - Hatchways\warbler\twitter-clone-4a4cb59b8b104672ba222dd09affea8f\venv\lib\site-packages\psycopg2\__init__.py", line 50, in <module>
+    from psycopg2._psycopg import (                     # noqa   
+ImportError: DLL load failed while importing _psycopg: The specified module could not be found.
+
+9.
+Enter postgres password into app.py
+
+  <<<<<<  SUCCESS!   >>>>>>
