@@ -2,18 +2,11 @@
 
 {% block content %}
 
-<aside class="col-md-4 col-lg-3 col-sm-12" id="user-aside">
-  <div class="card user-card">
-    <div>
-      <div class="image-wrapper">
-        <img src="{{ g.user.header_image_url }}" alt="" class="card-hero">
-      </div>
-
-      <div id="warbler-hero" class="full-width"></div>
-      <div>
+<div id="warbler-hero" class="full-width" style="background-image: url('static/image/warbler_hero.jpg');"></div>
+  <div>
       <img src="{{ user.image_url }}" alt="Image for {{ user.username }}" id="profile-avatar">
-      <div class="row full-width">
-        <div class="container">
+   <div class="row full-width">
+      <div class="container">
           <div class="row justify-content-end">
             <div class="col-9">
               <ul class="user-stats nav nav-pills">
@@ -62,9 +55,6 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</aside>
 <div class="row">
   <div class="col-sm-3">
     <h4 id="sidebar-username">@{{ user.username }}</h4>
